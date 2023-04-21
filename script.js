@@ -86,3 +86,4 @@ setTimeout(function () {
     cookiesPop.classList.add("active-pop");
   }
 }, 2000);
+// ver vxvdebi aq valiu rogor Sevinaxo rom refreshze popap agar amovardes

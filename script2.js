@@ -50,3 +50,50 @@ accordionDivs.forEach((element) => {
     });
   });
 });
+
+// galery image slider
+
+let leftBtn = document.querySelector(".btn-left");
+let rightBtn = document.querySelector(".btn-right");
+let mainImg = document.querySelector(".main-img");
+let smallImgs = document.querySelectorAll(".image-folder img");
+
+let Images = ["1", "2", "3", "4"];
+let counter = 0;
+
+let blurImages = () => {
+  smallImgs.forEach((img) => {
+    img.style.opacity = "0.5";
+  });
+};
+
+let moveLeft = () => {
+  counter--;
+  blurImages();
+  if (counter < 0) {
+    counter = smallImgs.length - 1;
+  }
+  mainImg.style.backgroundImage = `url(img/${Images[counter]}.jpg)`;
+  smallImgs[counter].style.opacity = "1";
+};
+let moveRight = () => {
+  counter++;
+  blurImages();
+  if (counter >= smallImgs.length) {
+    counter = 0;
+  }
+  mainImg.style.backgroundImage = `url(img/${Images[counter]}.jpg)`;
+  smallImgs[counter].style.opacity = "1";
+};
+
+leftBtn.addEventListener("click", moveLeft);
+rightBtn.addEventListener("click", moveRight);
+
+smallImgs.forEach((img, index) => {
+  img.addEventListener("click", function () {
+    mainImg.style.backgroundImage = `url(${img.getAttribute("src")})`;
+    blurImages();
+    img.style.opacity = "1";
+    counter = index;
+  });
+});
