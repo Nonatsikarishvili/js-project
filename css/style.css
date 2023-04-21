@@ -369,7 +369,7 @@ color: #E4A04F;
     align-items: center;
     padding: 15px;
 }
-.btn{
+.btnn{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -381,7 +381,7 @@ color: #E4A04F;
     font-size: 25px;
     
 }
-.btn:hover{
+.btnn:hover{
     background-color: #757381;
     color:#fff ;
 }
