@@ -167,6 +167,7 @@ color: #E4A04F;
 
 .filter-section{
     margin-top: 50px;
+    padding: 20px;
 }
 .filter-div{
     display: flex;
@@ -272,6 +273,7 @@ color: #E4A04F;
 }
  /* start footer */
 .footer-section{
+    padding: 20px;
    margin-top: 50px;
    background-color: #3F3E46;
    padding-top: 50px;
@@ -420,9 +422,9 @@ color: #E4A04F;
 }
 /* start accordion */
 
-/* .accordion-section{
-  margin-top: 30px;
-} */
+.accordion-section{
+padding: 20px;
+}
 .accordion-div{
     margin-bottom: 30px;
     background-image: linear-gradient(#E1D8DC,#F2E6D3) ;
@@ -467,6 +469,8 @@ color: #E4A04F;
 .form-section{
     margin-top: 115px;
     padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .reservation-form{
     display: flex;
@@ -475,6 +479,7 @@ color: #E4A04F;
     align-items: center;
     border-radius: 10px;
     box-shadow: -5px -5px 10px #fff, 2px 2px 5px rgb(213, 210, 210);
+    padding: 20px;
     
 }
 .reserv-h2{
@@ -574,7 +579,60 @@ color: #E4A04F;
     margin-bottom: 20px;
 }
 
+ /* start contact page */
+ /* customer section */
+ .Customer-section{
+    margin-top: 120px;
+    padding-top: 30px;
+    padding: 20px;
+ }
+ .customers-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.customer-box-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #3F3E46;
+}
+.customers-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-customer{
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 
+}
+.single-customer img{
+    width: 150px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.customer-ul li{
+    font-size: 18px;
+    font-weight: 600;
+    color: #E4A04F;
+}
+.single-customer p{
+    font-size: 17px;
+    line-height: normal;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+
+}
 @media (max-width:780px){
     .burger-icon{
         display: block;
@@ -591,6 +649,13 @@ color: #E4A04F;
     .taxi{
         margin-top: 50px;
     }
+    .single-customer{
+        max-width: 300px;
+        width: 100%;
+    
+    }
+   
+    
 }
 @media (max-width:580px){
     .parking{
@@ -602,12 +667,35 @@ color: #E4A04F;
     .main-img{
         height: 400px;
     }
+ 
+    .customers-info{
+        display: flex;
+        flex-direction: column;       
+        justify-content: center;
+        align-items: center;
+    }
+    .single-customer p{
+        width: 100%;
+        font-size: 17px;
+        line-height: normal;
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+    
+    }
+    .single-customer{
+        padding: 10px;
+    }
+
  }
+
+
 @media (max-width:480px){
-   
+
     .burger-div{
         top: 30px;
         right: 50%;
+    
     }
     .logo{
         padding-top: 60px;
@@ -623,6 +711,18 @@ color: #E4A04F;
 
     .main-img{
         height: 300px;
+    }
+    .form-section{
+        margin-top: 120px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .Customer-section{
+        margin-top: 120px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
   
 }
