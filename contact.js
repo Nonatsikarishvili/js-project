@@ -63,4 +63,11 @@ fetch("https://reqres.in/api/users?page=1", {
       customerBox.appendChild(div);
     });
   })
-  .catch(function (error) {});
+  .catch(function (error) {
+    let p = document.createElement("p");
+    p.textContent = "Server Error";
+    let customerBox = document.querySelector(".customers-info");
+    p.appendChild(customerBox);
+  });
+
+//   ?? jsdan orm ar shemeqma divebi ise ver davamate

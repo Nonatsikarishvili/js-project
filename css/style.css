@@ -3,6 +3,12 @@ body{
     background-image: linear-gradient(#E1D8DC,);
     position: relative;
 }
+button{
+    border: none;
+}
+input{
+    border: none;
+}
 .full-header{
     position: fixed;
     top: 0;
@@ -35,6 +41,7 @@ body{
     position: relative;
 }
 .logo{
+font-family: 'Syne', sans-serif;
 margin-top: 30px;
 font-size: 40px;
 font-weight: 900;
@@ -67,6 +74,7 @@ color: #E4A04F;
     margin-top: 20px;
 }
 .li{
+    font-family: 'Syne', sans-serif;
     margin-right: 15px;
     font-size: 20px;
     font-weight: 500;
@@ -97,7 +105,7 @@ color: #E4A04F;
 }
 .burger-div{
     position: absolute;
-    top: 50px;
+    top: 35px;
     right: 50px;
 }
 .burger-icon{
@@ -112,14 +120,17 @@ color: #E4A04F;
 .slider{
     margin-top: 135px;
     padding-top: 50px;
+    padding: 20px;
 }
 .slider-div{
+    border-radius: 10px;
     height: 500px;
     width: 100%;
-    background-image: url(../img/2.jpg);
+    /* background-image: url(../img/2.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: all 0.3ms;
 }
 
 /* facilities */
@@ -132,6 +143,7 @@ color: #E4A04F;
     width: 100%;
 }
 .fac-h2{
+    font-family: 'Syne', sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -184,6 +196,7 @@ color: #E4A04F;
     color: #3F3E46;
 }
 .filter-input{
+    font-family: 'Syne', sans-serif;
     width: 190px;
     height: 30px;
     font-size: 15px;
@@ -193,6 +206,7 @@ color: #E4A04F;
 }
 
 .filter-p{
+    font-family: 'Syne', sans-serif;
     margin-bottom: 15px;
     color: #3F3E46;
     font-size: 17px;
@@ -237,13 +251,15 @@ color: #E4A04F;
     margin-bottom: 10px;
 }
 .cookie-title{
+    font-family: 'Syne', sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #b88240;
     margin-bottom: 10px;
 }
 .cookies-text{
-    font-size: 14px;
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
     max-width: 200px;
     text-align: center;
     margin-bottom: 15px
@@ -263,7 +279,7 @@ color: #E4A04F;
     font-size: large;
     font-weight: 600;
     color: #fff;
-
+    font-family: 'Syne', sans-serif;
 }
 .btn.cancel{
     background-color: #757381;
@@ -292,6 +308,7 @@ color: #E4A04F;
     align-items: center;
 }
 .footer-a{
+    font-family: 'Syne', sans-serif;
     font-size: 30px;
     font-weight: 900;
     color: #E4A04F;
@@ -304,6 +321,7 @@ color: #E4A04F;
 }
 .mail-a,
 .call-a{
+    font-family: 'Syne', sans-serif;
     font-size: 17px;
     color:  #ffff;
 
@@ -313,6 +331,7 @@ color: #E4A04F;
 }
 
 .footer-li{
+    font-family: 'Syne', sans-serif;
     font-size: 20px;
     color: #ffff;
     font-weight: 600;
@@ -331,6 +350,7 @@ color: #E4A04F;
     align-items: center;
 }
 .footer-subscribelable{
+    font-family: 'Syne', sans-serif;
     font-size: 25px;
     /* font-weight: 600; */
     color:#ffff ;
@@ -345,6 +365,7 @@ color: #E4A04F;
     text-align: center;
 }
 .subscribe-button{
+    font-family: 'Syne', sans-serif;
     width: 190px;
     height: 30px;
     font-size: 15px;
@@ -381,6 +402,8 @@ color: #E4A04F;
     align-items: center;
     color: #757381;
     font-size: 25px;
+    font-family: 'Syne', sans-serif;
+
     
 }
 .btnn:hover{
@@ -425,12 +448,22 @@ color: #E4A04F;
 .accordion-section{
 padding: 20px;
 }
+.accordion-title-h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 25px ;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #3F3E46;
+
+}
 .accordion-div{
     margin-bottom: 30px;
     background-image: linear-gradient(#E1D8DC,#F2E6D3) ;
     border-radius: 5px;
 }
 .accordion-title{
+    font-family: 'Syne', sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #3F3E46;
@@ -449,6 +482,7 @@ padding: 20px;
 
 }
 .accordion-text{
+    font-family: 'Syne', sans-serif;
     margin-bottom: 15px;
     color: #3F3E46;
     font-size: 17px;
@@ -483,6 +517,7 @@ padding: 20px;
     
 }
 .reserv-h2{
+    font-family: 'Syne', sans-serif;
     font-size: 30px;
     font-weight: 700;
     margin-top: 20px;
@@ -499,12 +534,14 @@ padding: 20px;
 
 }
 .form-field label{
+    font-family: 'Syne', sans-serif;
     font-size: 17px;
     color:#3F3E46;
     font-weight: 700;
 
 }
 .input-field input{
+    font-family: 'Syne', sans-serif;
    width: 90%;
    height: 50px;
    padding: 10px;
@@ -548,6 +585,7 @@ padding: 20px;
     display: inline-block;
 }
 .error-msg{
+    font-family: 'Syne', sans-serif;
     font-size: 15px;
     color:rgb(197, 25, 25);
     margin-top: 10px;
@@ -577,6 +615,8 @@ padding: 20px;
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Syne', sans-serif;
+
 }
 
  /* start contact page */
@@ -598,6 +638,8 @@ padding: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
     color: #3F3E46;
+    font-family: 'Syne', sans-serif;
+
 }
 .customers-info{
     display: flex;
@@ -624,8 +666,11 @@ padding: 20px;
     font-size: 18px;
     font-weight: 600;
     color: #E4A04F;
+    font-family: 'Syne', sans-serif;
+
 }
 .single-customer p{
+    font-family: 'Syne', sans-serif;
     font-size: 17px;
     line-height: normal;
     text-align: center;
@@ -657,7 +702,22 @@ padding: 20px;
    
     
 }
+@media (max-width:650px){
+    .logo{
+        font-size: 35px;
+    }
+}
 @media (max-width:580px){
+    .burger-div{
+        top: 30px;
+        right: 50%;
+    
+    }
+   
+    .logo{
+        font-size: 35px;
+        padding-top: 60px;
+    }
     .parking{
         margin-top: 50px;
     }
@@ -681,6 +741,8 @@ padding: 20px;
         text-align: center;
         padding: 5px;
         margin-top: 10px;
+        font-family: 'Syne', sans-serif;
+
     
     }
     .single-customer{
@@ -699,6 +761,7 @@ padding: 20px;
     }
     .logo{
         padding-top: 60px;
+        font-size: 27px;
         
     }
     .footer{
@@ -707,6 +770,11 @@ padding: 20px;
     }
     .footer-logo{
         margin-bottom: 30px;
+    }
+    .footer-a{
+        font-family: 'Syne', sans-serif;
+        font-size: 25px;
+      
     }
 
     .main-img{
@@ -728,6 +796,7 @@ padding: 20px;
 }
 
 @media (max-width:400px){
+    
    .gym{
     margin-top: 50px;
    }

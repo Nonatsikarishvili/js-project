@@ -30,7 +30,27 @@ window.onscroll = function () {
     header.classList.remove("active");
   }
 };
+// start slider
+let sliderDiv = document.querySelector(".slider-div");
+let sliderArray = ["5", "4", "3", "2"];
+let sliderIndex = 0;
 
+function slide() {
+  sliderDiv.style.backgroundImage = `url(img/${sliderArray[sliderIndex]}.jpg)`;
+}
+slide();
+function moveRight() {
+  sliderIndex++;
+  slide();
+  if (sliderIndex == sliderArray.length - 1) {
+    sliderIndex = 0;
+    slide();
+  }
+}
+
+setInterval(() => {
+  moveRight();
+}, 4000);
 // start filter
 
 let filterInput = document.querySelector(".filter-input");
