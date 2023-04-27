@@ -173,3 +173,34 @@ passwordInput.addEventListener("focusout", () => {
 confirmPassword.addEventListener("focusout", () => {
   validateconfirmatio();
 });
+
+// start footer form fetch post
+
+let form = document.querySelector(".footer-form");
+let input = document.querySelector(".footeremail-input");
+let SubBtn = document.querySelector(".subscribe-button");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let inputValue = input.value;
+  let formDara = {
+    Email: inputValue,
+  };
+  fetch("https://reqres.in/api/users?page=1", {
+    method: "POST",
+    body: JSON.stringify(formDara),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  })
+    .then((response) => console.log(response))
+    .then((subscribeEmail) => {
+      if ((response.status = 201)) {
+        form.submit;
+        inputValue.innerHTML = " ";
+      }
+    })
+    .catch((error) => {
+      alert("Server Error");
+    });
+});
